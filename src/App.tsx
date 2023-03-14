@@ -5,6 +5,8 @@ import StationDetailsPage from './pages/StationDetailsPage';
 import { APP_NAME } from "./constants/constants";
 import { routes } from "./constants/routes";
 import CreateStationPage from "./pages/CreateStationPage";
+import './App.css'
+import Header from "./components/Header";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -20,7 +22,7 @@ function App() {
   return (
     <BrowserRouter>
       <QueryClientProvider client={queryClient} >
-        <header>{APP_NAME}</header>
+        <Header />
         <Routes>
           <Route path={routes.HOME} element={<StationsPage />} />
           <Route path={routes.STATION_DETAILS} element={<StationDetailsPage />} />
