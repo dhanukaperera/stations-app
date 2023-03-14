@@ -1,6 +1,6 @@
 import { QueryStatus, useQuery } from "@tanstack/react-query";
 import fetchStationList from "../network/fetchStations";
-import { Station } from "../types/APIResponceTypes";
+import { Station } from "../types/APIResponseTypes";
 
 const useStations = () => {
 	const results = useQuery(["stations"],fetchStationList)

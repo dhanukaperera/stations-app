@@ -1,5 +1,5 @@
 import { QueryStatus } from '@tanstack/react-query';
-import { StationDetails } from './../types/APIResponceTypes';
+import { StationDetails } from '../types/APIResponseTypes';
 import { useQuery } from '@tanstack/react-query';
 import fetchStationDetails from '../network/fetchStationDetails';
 

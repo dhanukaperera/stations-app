@@ -6,13 +6,13 @@ import useStations from "../hooks/useStations";
 const StationsPage = () => {
 	const [stationList, status] = useStations();
 
-	return <div>StationsPage
+	return <>
 		{status === "loading" && <Loading />}
 
 		{status === "error" && <DisplayError />}
 
 		{status === "success" && <StationList stationList={stationList} />}
-	</div>
+	</>
 }
 
 export default StationsPage;

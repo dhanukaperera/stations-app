@@ -1,4 +1,4 @@
-import { Station } from "../types/APIResponceTypes";
+import { Station } from "../types/APIResponseTypes";
 import StationItem from "./StationItem";
 
 type StationListProps = {
@@ -9,11 +9,11 @@ const StationList = (props: StationListProps) => {
 
 	const { stationList } = props
 
-	return <div>Station List
+	return <>
 		{stationList.map((station) => {
 			return <StationItem key={station.id} name={station.name} tagline={station.tagline} brandSlug={station.brand.slug} slug={station.slug} />
 		})}
-	</div>
+	</>
 }
 
 export default StationList
