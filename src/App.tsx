@@ -4,6 +4,7 @@ import StationsPage from './pages/StationsPage';
 import StationDetailsPage from './pages/StationDetailsPage';
 import { APP_NAME } from "./constants/constants";
 import { routes } from "./constants/routes";
+import CreateStationPage from "./pages/CreateStationPage";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path={routes.HOME} element={<StationsPage />} />
           <Route path={routes.STATION_DETAILS} element={<StationDetailsPage />} />
+          <Route path={routes.CREATE_STATION} element={<CreateStationPage />} />
         </Routes>
       </QueryClientProvider>
     </BrowserRouter>
