@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import { DEFAULT_LOADING_MESSAGE } from "../constants/constants";
 
-const Loading = () => {
+type LoadingProps = {
+	message?: string
+}
+
+const Loading = (props: LoadingProps) => {
+	const { message } = props
 	return <LoadingStyles>
-		<h1>{DEFAULT_LOADING_MESSAGE}</h1>
+		<h1 data-testid="loading" > {message ? message : DEFAULT_LOADING_MESSAGE} </h1>
 	</LoadingStyles>
 }
 

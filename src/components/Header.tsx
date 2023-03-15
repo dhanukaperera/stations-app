@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Header = () => {
 	return <HeaderStyles>
-		<LogoStyles src="https://global.com/wp-content/uploads/2022/11/221109_GlobalPlayer_Logo_AW_Mono_White_RGB.svg" />
+		<LogoStyles src="https://global.com/wp-content/uploads/2022/11/221109_GlobalPlayer_Logo_AW_Mono_White_RGB.svg" alt="logo" />
 	</HeaderStyles>
 }
 

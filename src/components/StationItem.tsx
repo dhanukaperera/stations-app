@@ -14,10 +14,10 @@ type StationItemProps = {
 
 const StationItem = (props: StationItemProps) => {
 	const { name, tagline, brandSlug, slug } = props;
-	return <StationItemStyle>
+	return <StationItemStyle >
 
-		<h2> <FiRadio />  {name}</h2>
-		<p>{tagline}</p>
+		<h2 data-testid="station-item-name"> <FiRadio /> {name} </h2>
+		<p data-testid="station-item-tagline">{tagline}</p>
 		<Link to={formatRoute(routes.STATION_DETAILS, [brandSlug, slug])}  >
 			<MoreButtonStyles>More <IoMdArrowRoundForward /> </MoreButtonStyles>
 		</Link>

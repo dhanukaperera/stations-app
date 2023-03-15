@@ -1,0 +1,204 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`it should render correctly the create station page 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dmqHEX kcReYj"
+  >
+    <h1>
+      Create Station
+    </h1>
+    <div
+      class="sc-eDDNvR gUUDRM"
+    >
+      <form
+        class="sc-hLseeU gaLath"
+      >
+        <label
+          for="name"
+        >
+            Name :
+          <input
+            id="name"
+            name="name"
+            type="text"
+          />
+        </label>
+        <label
+          for="tagline"
+        >
+          Tag Line :	
+          <input
+            id="tagline"
+            name="tagline"
+            type="text"
+          />
+           
+        </label>
+        <label
+          for="streamUrl"
+        >
+            URL :	
+          <input
+            id="streamUrl"
+            name="streamUrl"
+            type="url"
+          />
+        </label>
+        <label
+          for="logo"
+        >
+          Logo :
+          <input
+            accept="image/*"
+            id="logo"
+            name="logo"
+            type="file"
+          />
+        </label>
+        <div>
+          <input
+            type="submit"
+          />
+        </div>
+        <button
+          class="sc-jTrPJq hVexkC"
+          type="reset"
+        >
+          Clear
+        </button>
+      </form>
+    </div>
+    <a
+      href="/"
+    >
+      <button
+        class="sc-jTrPJq hVexkC"
+      >
+        Back
+      </button>
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`render correctly the create station page 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dmqHEX kcReYj"
+  >
+    <h1>
+      Create Station
+    </h1>
+    <div
+      class="sc-eDDNvR gUUDRM"
+    >
+      <form
+        class="sc-hLseeU gaLath"
+      >
+        <label
+          for="name"
+        >
+            Name :
+          <input
+            id="name"
+            name="name"
+            type="text"
+          />
+        </label>
+        <label
+          for="tagline"
+        >
+          Tag Line :	
+          <input
+            id="tagline"
+            name="tagline"
+            type="text"
+          />
+           
+        </label>
+        <label
+          for="streamUrl"
+        >
+            URL :	
+          <input
+            id="streamUrl"
+            name="streamUrl"
+            type="url"
+          />
+        </label>
+        <label
+          for="logo"
+        >
+          Logo :
+          <input
+            accept="image/*"
+            id="logo"
+            name="logo"
+            type="file"
+          />
+        </label>
+        <div>
+          <input
+            type="submit"
+          />
+        </div>
+        <button
+          class="sc-jTrPJq hVexkC"
+          type="reset"
+        >
+          Clear
+        </button>
+      </form>
+    </div>
+    <a
+      href="/"
+    >
+      <button
+        class="sc-jTrPJq hVexkC"
+      >
+        Back
+      </button>
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders correctly with some stations 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-beqWaB dzAcBK"
+  >
+    <img
+      alt="Capital Teesside logo"
+      src="https://herald.musicradio.com/media/0d3d891d-32f2-4c53-95ee-8d1e35bdd126.png"
+    />
+    <div
+      class="sc-gueYoa kEobtL"
+    >
+      <h1>
+        Capital Teesside
+      </h1>
+      <p>
+        The UK's No.1 Hit Music Station
+      </p>
+      <audio
+        class="react-audio-player "
+        controls=""
+        id=""
+        preload="metadata"
+        src="https://media-ssl.musicradio.com/CapitalTeesside"
+        title="https://media-ssl.musicradio.com/CapitalTeesside"
+      >
+        <p>
+          Your browser does not support the 
+          <code>
+            audio
+          </code>
+           element.
+        </p>
+      </audio>
+    </div>
+  </div>
+</DocumentFragment>
+`;

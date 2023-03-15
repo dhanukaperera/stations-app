@@ -1,6 +1,6 @@
 interface StationCore {
 	gduid:string,
-	heraldId:string,
+	heraldId:number | string,
 	id:string,
 	name:string,
 	slug:string

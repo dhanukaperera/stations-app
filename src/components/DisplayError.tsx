@@ -3,7 +3,7 @@ import { DEFAULT_ERROR_MESSAGE } from "../constants/constants"
 
 const DisplayError = () => {
 	return <DisplayErrorStyles>
-		<h1>{DEFAULT_ERROR_MESSAGE}</h1>
+		<h1 data-testid="display-error-message" >{DEFAULT_ERROR_MESSAGE}</h1>
 	</DisplayErrorStyles>
 }
 

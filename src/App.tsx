@@ -2,7 +2,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import StationsPage from './pages/StationsPage';
 import StationDetailsPage from './pages/StationDetailsPage';
-import { APP_NAME } from "./constants/constants";
 import { routes } from "./constants/routes";
 import CreateStationPage from "./pages/CreateStationPage";
 import './App.css'

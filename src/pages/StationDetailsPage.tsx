@@ -3,7 +3,7 @@ import styled from "styled-components";
 import DisplayError from "../components/DisplayError";
 import Loading from "../components/Loading";
 import StationDetails from "../components/StationDetails";
-import { BTN_TEXT_BACK, ERROR_MISSING_BRAND_AND_SLUG } from "../constants/constants";
+import { ERROR_MISSING_BRAND_AND_SLUG } from "../constants/constants";
 import { routes } from "../constants/routes";
 import useStationDetails from "../hooks/useStationDetails";
 
@@ -26,7 +26,7 @@ const StationDetailsPage = () => {
 		{status === "success" && <StationDetailsPageStyles>
 			<StationDetails name={stationDetails.name} tagline={stationDetails.tagline} brandLogo={stationDetails.brandLogo} steamingUrl={stationDetails.streamUrl} />
 			<Link to={routes.HOME} >
-				<BackButtonStyles>{BTN_TEXT_BACK}</BackButtonStyles>
+				<BackButtonStyles>Back</BackButtonStyles>
 			</Link>
 		</StationDetailsPageStyles>}
 	</>

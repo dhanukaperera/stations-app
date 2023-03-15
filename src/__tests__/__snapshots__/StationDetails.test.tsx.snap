@@ -1,0 +1,157 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`it should render a list of  1`] = `
+<DocumentFragment>
+  <div
+    class="sc-beqWaB dzAcBK"
+  >
+    <img
+      alt="Capital Teesside logo"
+      src="https://herald.musicradio.com/media/0d3d891d-32f2-4c53-95ee-8d1e35bdd126.png"
+    />
+    <div
+      class="sc-gueYoa kEobtL"
+    >
+      <h1>
+        Capital Teesside
+      </h1>
+      <p>
+        The UK's No.1 Hit Music Station
+      </p>
+      <audio
+        class="react-audio-player "
+        controls=""
+        id=""
+        preload="metadata"
+        src="https://media-ssl.musicradio.com/CapitalTeesside"
+        title="https://media-ssl.musicradio.com/CapitalTeesside"
+      >
+        <p>
+          Your browser does not support the 
+          <code>
+            audio
+          </code>
+           element.
+        </p>
+      </audio>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`it should render a station deatils 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-beqWaB dzAcBK"
+  >
+    <img
+      alt="Capital Teesside logo"
+      src="https://herald.musicradio.com/media/0d3d891d-32f2-4c53-95ee-8d1e35bdd126.png"
+    />
+    <div
+      class="sc-gueYoa kEobtL"
+    >
+      <h1>
+        Capital Teesside
+      </h1>
+      <p>
+        The UK's No.1 Hit Music Station
+      </p>
+      <audio
+        class="react-audio-player "
+        controls=""
+        id=""
+        preload="metadata"
+        src="https://media-ssl.musicradio.com/CapitalTeesside"
+        title="https://media-ssl.musicradio.com/CapitalTeesside"
+      >
+        <p>
+          Your browser does not support the 
+          <code>
+            audio
+          </code>
+           element.
+        </p>
+      </audio>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`it should render a station details 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-beqWaB dzAcBK"
+  >
+    <img
+      alt="Capital Teesside logo"
+      src="https://herald.musicradio.com/media/0d3d891d-32f2-4c53-95ee-8d1e35bdd126.png"
+    />
+    <div
+      class="sc-gueYoa kEobtL"
+    >
+      <h1>
+        Capital Teesside
+      </h1>
+      <p>
+        The UK's No.1 Hit Music Station
+      </p>
+      <audio
+        class="react-audio-player "
+        controls=""
+        id=""
+        preload="metadata"
+        src="https://media-ssl.musicradio.com/CapitalTeesside"
+        title="https://media-ssl.musicradio.com/CapitalTeesside"
+      >
+        <p>
+          Your browser does not support the 
+          <code>
+            audio
+          </code>
+           element.
+        </p>
+      </audio>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders correctly with some stations 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-beqWaB dzAcBK"
+  >
+    <img
+      alt="Capital Teesside logo"
+      src="https://herald.musicradio.com/media/0d3d891d-32f2-4c53-95ee-8d1e35bdd126.png"
+    />
+    <div
+      class="sc-gueYoa kEobtL"
+    >
+      <h1>
+        Capital Teesside
+      </h1>
+      <p>
+        The UK's No.1 Hit Music Station
+      </p>
+      <audio
+        class="react-audio-player "
+        controls=""
+        id=""
+        preload="metadata"
+        src="https://media-ssl.musicradio.com/CapitalTeesside"
+        title="https://media-ssl.musicradio.com/CapitalTeesside"
+      >
+        <p>
+          Your browser does not support the 
+          <code>
+            audio
+          </code>
+           element.
+        </p>
+      </audio>
+    </div>
+  </div>
+</DocumentFragment>
+`;

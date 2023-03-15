@@ -1,6 +1,5 @@
 import ReactAudioPlayer from 'react-audio-player';
 import styled from 'styled-components';
-import { ALT_LOGO } from '../constants/constants';
 
 type StationDetailsProps = {
 	name: string
@@ -13,7 +12,7 @@ const StationDetails = (props: StationDetailsProps) => {
 	const { name, tagline, brandLogo, steamingUrl } = props;
 
 	return <StationDetailsStyles>
-		<img src={brandLogo} alt={`${name} ${ALT_LOGO}`} />
+		<img src={brandLogo} alt={`${name} logo`} />
 		<InfoContainer>
 			<h1>
 				{name}
