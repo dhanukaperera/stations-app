@@ -1,6 +1,7 @@
 import { useState, FormEvent } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import LogoPreview from "../components/LogoPreview";
 import { routes } from "../constants/routes";
 
 type FormData = {
@@ -25,8 +26,6 @@ const CreateStationPage = () => {
 			logo: formData.get('logo') instanceof File ? formData.get('logo') : null,
 		};
 		console.log(data)
-
-
 	}
 
 	function handleFileInputChange(event: React.ChangeEvent<HTMLInputElement>) {
@@ -40,9 +39,7 @@ const CreateStationPage = () => {
 			};
 			fileReader.readAsDataURL(fileList[0]);
 		}
-
 	}
-
 
 	return <CreateStationPageStyles>
 		<h1>Create Station</h1>
@@ -56,12 +53,10 @@ const CreateStationPage = () => {
 				</label>
 				<div>
 					<input type="submit" />
-
 				</div>
 				<BackButtonStyles type="reset" onClick={() => setPreviewUrl(undefined)} >Clear</BackButtonStyles>
 			</FormStyles>
-
-			{previewUrl && <LogoPreviewStyles><PreviewImageStyles src={previewUrl} alt="Preview" /> <p>Logo Preview</p></LogoPreviewStyles>}
+			{previewUrl && <LogoPreview previewUrl={previewUrl} />}
 		</FormWrapContainer>
 
 		<Link to={routes.HOME} >
@@ -77,25 +72,14 @@ const CreateStationPageStyles = styled.div`
 	flex-direction:column;
 	align-items:center;
 	padding:2rem;
-
 	width:70%;
 	margin:1rem auto;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+
 	h1{
 		margin-bottom:1rem;
 		text-align:center;
 	}
-	img {
-
-	}
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
-`
-
-const PreviewImageStyles = styled.img`
-		border:4px solid #006efa;
-		border-radius: 50%;
-		width:250px;
-		height:250px;
-		object-fit:cover;
 `
 
 const FormStyles = styled.form`
@@ -126,23 +110,11 @@ const FormStyles = styled.form`
 		color:#fff;
 		cursor:pointer;
 	}
-
 `
 
 const FormWrapContainer = styled.div`
 	display:flex;
 	align-items:center;
-`
-const LogoPreviewStyles = styled.div`
-	display:flex;
-	flex-direction:column;
-	width:100%;
-	justify-content:center;
-	align-items:center;
-	padding: 1rem;
-	p {
-		padding:1rem;
-	}
 `
 
 const BackButtonStyles = styled.button`
