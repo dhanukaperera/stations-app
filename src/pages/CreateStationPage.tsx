@@ -1,7 +1,10 @@
+import { useMutation } from "@tanstack/react-query";
+import axios from "axios";
 import { useState, FormEvent } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import LogoPreview from "../components/LogoPreview";
+import { API_CREATE_STATION_ENDPOINT } from "../constants/constants";
 import { routes } from "../constants/routes";
 
 type FormData = {
@@ -15,6 +18,10 @@ const CreateStationPage = () => {
 
 	const [previewUrl, setPreviewUrl] = useState<string | undefined>();
 
+	const mutation = useMutation((requestParams: FormData) => {
+		return axios.post(API_CREATE_STATION_ENDPOINT, requestParams);
+	});
+
 	const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault()
 		const formData = new FormData(event.currentTarget);
@@ -25,7 +32,7 @@ const CreateStationPage = () => {
 			streamUrl: formData.get('streamUrl')?.toString() ?? '',
 			logo: formData.get('logo') instanceof File ? formData.get('logo') : null,
 		};
-		console.log(data)
+		mutation.mutate(data)
 	}
 
 	function handleFileInputChange(event: React.ChangeEvent<HTMLInputElement>) {

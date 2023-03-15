@@ -1,6 +1,6 @@
-// TODO - add  a comment why not use BASE URL
 export const API_STATIONS_ENDPOINT :string = 'https://bff-web-guacamole.musicradio.com/stations'
 export const API_STATION_DETAILS_ENDPOINT:string = 'https://bff-web-guacamole.musicradio.com/station'
+export const API_CREATE_STATION_ENDPOINT:string = 'https://bff-web-guacamole.musicradio.com/station/new'
 
 export const DEFAULT_ERROR_MESSAGE:string = "Something went wrong!"
 export const DEFAULT_LOADING_MESSAGE:string = "Loading..."
