@@ -38,8 +38,6 @@ const StationDetailsStyles = styled.div`
 		border-radius: 50%;
 	}
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
-
-
 `
 const InfoContainer = styled.div`
 	margin:1rem 2rem;
